@@ -1,0 +1,121 @@
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    --body-copy: 14px;
+    --font-family: 'Inter', sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-medium: 600;
+    --font-weight-regular: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype-variations");
+    font-weight: 100 900; 
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--grey-900);
+}
+
+.attribution { 
+    font-size: .75rem; 
+    text-align: center; 
+    position: absolute;
+    bottom: 5px;
+    color: var(--white)
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card{
+    background-color: var(--grey-800);
+    padding: 1.9rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 18.2rem;
+    height: 29rem;
+    gap: 1.25rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    text-align: center;
+}
+
+header img{
+    width: 4.25rem;
+    border-radius: 50%;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.personal-info .name{
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
+}
+
+.personal-info .location{
+    color: var(--green);
+    font-family: var(--font-family);
+    font-size: 0.65rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.personal-info .bio{
+    margin-top: .75rem;
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: 0.65rem;
+    font-weight: var(--font-weight-regular);
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.links .link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+    justify-content: center;
+    color: var(--white);
+    background-color: var(--grey-700);
+    font-family: var(--font-family);
+    font-size: 0.65rem;
+    font-weight: var(--font-weight-bold);
+    height: 2.125rem;
+    border-radius: .4rem;
+}
